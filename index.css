@@ -1,0 +1,8 @@
+.carte{
+    border: 2px blue solid;
+    border-radius: 30px;
+    max-height: 200px;
+}
+.imageC{
+    object-fit: cover;
+}
