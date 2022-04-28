@@ -376,9 +376,47 @@ $(function () {
         "retina_detect": !0
     });
 
+    let lienFacebook = document.getElementById('facebook');
+
+    lienFacebook.addEventListener('click', function () {
+        window.open("https://facebook.com")
+    })
 
 
+    let lienTwitter = document.getElementById('twitter')
 
+    lienTwitter.addEventListener('click', function() {
+        window.open('https://twitter.com')
+    })
 
+    let lienInstagram = document.getElementById('instagram')
+
+    lienInstagram.addEventListener('click', function () {
+        window.open('https://instagram.com')
+    })
+
+    let lienLikedin = document.getElementById('linkedin')
+
+    lienLikedin.addEventListener('click', function () {
+        window.open('https://linkedin.com')
+    })
+
+    let submitBtn = document.getElementById('submitter')
+
+    let myname = document.getElementById('namebox')
+    let myemail = document.getElementById('emailbox')
+    let mymessage = document.getElementById('messagebox')
+
+    let checkEnableButton = () => { // il check si les casses sont rempliees
+    submitBtn.disabled = !(
+        namebox.value && 
+        emailbox.value && 
+        messagebox.value
+        )
+    }
+
+    myname.addEventListener('change', checkEnableButton)
+    myemail.addEventListener('change', checkEnableButton)
+    mymessage.addEventListener('change', checkEnableButton)
 
 });
