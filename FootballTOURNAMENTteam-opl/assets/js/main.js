@@ -376,6 +376,8 @@ $(function () {
         "retina_detect": !0
     });
 
+    // -------------- Début Partie Xavier liens internet sur les logos ---------------------
+
     let lienFacebook = document.getElementById('facebook');
 
     lienFacebook.addEventListener('click', function () {
@@ -395,11 +397,13 @@ $(function () {
         window.open('https://instagram.com')
     })
 
-    let lienLikedin = document.getElementById('linkedin')
+    let lienLinkedin = document.getElementById('linkedin')
 
-    lienLikedin.addEventListener('click', function () {
+    lienLinkedin.addEventListener('click', function () {
         window.open('https://linkedin.com')
     })
+
+    // ---------------------- Début partie Gab Formulaire ------------------------------------------ 
 
     let submitBtn = document.getElementById('submitter')
 
