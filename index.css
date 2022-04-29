@@ -1,0 +1,30 @@
+ 
+.imageC{
+    object-fit: cover;
+    max-height: 150px;
+}
+#messagebox {
+    width: 100%;
+}
+.feed {
+    margin-top: 1vh;
+}
+#namebox {
+    width: 35%;
+    margin-left: 2.2vh;
+
+}
+#numID {
+    width: 35%;
+    margin: 1.1vh;
+}
+#teambox {
+    width: 25%;
+    margin: 1vh;
+}
+.feeder {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    font-weight: 400;
+    color: black;
+}
