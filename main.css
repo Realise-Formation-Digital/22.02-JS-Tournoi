@@ -4,3 +4,7 @@
 .feed {
     margin-top: 2vh;
 }
+
+#toast {
+    border: blanchedalmond, 5px, solid;
+}

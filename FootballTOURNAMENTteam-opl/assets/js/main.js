@@ -423,7 +423,49 @@ $(function () {
     myemail.addEventListener('change', checkEnableButton)
     mymessage.addEventListener('change', checkEnableButton)
 
+});
     // -----------------------Xav Toast --------------------------------------
 
+// Get Événement
+    async function getEvents() {
+        try {
+            let response = await axios.get("https://apitournoi.nait-web.com/api/tournoi/list")
+            if (response.status !== 200) throw new Error('failed')
+            return response.data
+        } catch (e) {
+            console.log(e)
+        }
+    }
+    // get team
+    async function getTeams() {
+        try {
+            let response = await axios.get("https://apitournoi.nait-web.com/api/equipe/list")
+            if (response.status !== 200) throw new Error('failed')
+            return response.data
+        } catch (e) {
+            console.log(e)
+        }
+    }
+    
+    //get player list
+    async function getPlayerList() {
+      try {
+          let response = await axios.get("https://apitournoi.nait-web.com/api/joueur/list")
+          if (response.status !== 200) throw new Error('failed')
+          return response.data
+      } catch (e) {
+          console.log(e)
+      }
+    }
+    // afficher les équipes
 
-});
+
+        // let teamEl = document.getElementById("team");
+        // const teamList = await getTeams();
+    
+        // for(const team of teamList) {
+        //     teamEl.innerHTML = "failed" + e;  
+
+        // };
+
+
